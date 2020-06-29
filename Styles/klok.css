@@ -1,0 +1,111 @@
+
+.clock{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+    font-size: 50px;
+    font-family: Helvetica;
+    letter-spacing: 7px;
+    transition-delay: 3s;
+    text-align: center;  
+}
+
+
+img{
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+    width: 60%;
+    margin-left: 110px;
+    margin-right: auto;
+}
+
+//** Wanneer er over de wereldbol gehoverd wordt, draait hij 360 graden **/
+img:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+
+#mainHeading{
+	font-size: 2em;
+    color: white;
+	font-family: Helvetica;
+	text-align: center;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    padding: 2em 1.5em;
+}
+
+
+#mainHeading.changesSize{
+	transition-duration: 3s;
+	font-size: 3em;
+}
+
+
+
+@media only screen and (min-width: 600px){
+    div{
+        margin: auto;
+        margin-top: 20px;
+
+    }
+
+
+    img{
+        width: 65%;
+    }
+
+
+    #mainHeading.changesSize{
+        transition-duration: 3s;
+        font-size: 3.5em;
+    }
+
+}
+
+
+@media only screen and (min-width: 900px){
+    div{
+        width: 30%;
+        margin: 20px;
+    }
+
+
+    img{
+        width: 70%;
+    }
+
+
+    h1{
+        height: 200px;
+    }
+
+}
+
+
+ @media only screen and (min-width: 1300px){
+    div{
+        width: 20%;
+    }   
+
+
+    img{
+        width: 75%;
+    }
+
+
+    h1{
+    height: 300px;
+    }
+
+
+    #mainHeading.changesSize{
+        transition-duration: 3s;
+        font-size: 4.5em;
+    }
+
+}
+
